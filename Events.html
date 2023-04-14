@@ -113,18 +113,6 @@
 </body>
 </html>
 <style>
-    @media screen and (max-width: 900px){  
-   
-       .CSI1, .CSI2, .IEEE{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-    }
-    .csi1, .csi2, .gallery{
-        display: contents;
-    }
-         }
     body{
         font-family: Playfair Display;
         border-radius: 10px;
@@ -216,6 +204,19 @@
         font-weight: 800;
 
     }
+     @media screen and (max-width: 900px){ 
+       .CSI1, .CSI2, .IEEE{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .csi1, .csi2, .gallery{
+        display: contents;
+    }
+         img{
+             border: 3px solid black;
+         }
 </style>
 <script>
     function fun1()
