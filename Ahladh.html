@@ -16,19 +16,19 @@
 <div class = "Aahladh1">
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/solo-singing.jpeg">
-            <img src = "solo-singing.jpeg" alt = "Ipd" width="220" height = "160">
+            <img src = "docs/assets/images/solo-singing.jpeg" alt = "Ipd" width="220" height = "160">
         </a>
         <div class = "desc">Solo Singing</div>
     </div>    
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/solo-dance.jpeg">
-            <img src = "solo-dance.jpeg" alt = "YEng" width="220" height = "160">
+            <img src = "docs/assets/images/solo-dance.jpeg" alt = "YEng" width="220" height = "160">
         </a>
         <div class = "desc">Solo Dance</div>
     </div>    
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/fashion-show.jpeg">
-            <img src = "fashion-show.jpeg" alt = "Ideap" width="220" height = "160">
+            <img src = "docs/assets/images/fashion-show.jpeg" alt = "Ideap" width="220" height = "160">
         </a>
         <div class = "desc">Fashion Show</div>
     </div>
@@ -37,19 +37,19 @@
 <div class = "Aahladh2">
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/mehandhi.jpeg">
-            <img src = "mehandhi.jpeg" alt = "Ideap" width="220" height = "160">
+            <img src = "docs/assets/images/mehandhi.jpeg" alt = "Ideap" width="220" height = "160">
         </a>
         <div class = "desc">Mehandhi</div>
     </div>
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/movie.jpeg">
-            <img src = "movie.jpeg" alt = "Ideap" width="220" height = "160">
+            <img src = "docs/assets/images/movie.jpeg" alt = "Ideap" width="220" height = "160">
         </a>
         <div class = "desc">Movie Quiz</div>
     </div>
     <div class = "gallery">
         <a target = "_blank" href = "docs/assets/images/xtalent.jpeg">
-            <img src = "xtalent.jpeg" alt = "Ideap" width="220" height = "160">
+            <img src = "docs/assets/images/xtalent.jpeg" alt = "Ideap" width="220" height = "160">
         </a>
         <div class = "desc">X-Talent</div>
     </div>
@@ -111,15 +111,22 @@
     div.gallery, img{
         border-radius: 20px;
     }
+    @media only screen and (max-width: 1000px){
+    div.Aahladh1, div.Aahladh2{
+        flex-direction: column;}
     img{
         border: 3px solid black;
     }
     .gallery{
         display: contents;
     }
+         #IE:hover{
+            background-color: #1a1463;
+            color: white; 
+        }
     div.desc{
         padding: 0px 10px 20px 0px;
         font-size: 25px;
-    }
+    }}
     
 </style>
