@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>Contests</h1>
+    <h2>Under IEEE Student Chapter: </h2>
+    <input id = "IE" type = button value = "Click to view the poster" onclick = fun1()>
+    <br><br>
+<div class = "IEEE">
+    <div class = "gallery">
+        <a target = "_blank" href = "Young innovator.jpg">
+            <img src = "ipd.png" alt = "Ipd" width="220" height = "140">
+        </a>
+        <div class = "desc">Young Innovator</div>
+        <!--<div class = "sub">-Innovative Product</div>
+        <div class = "sub">Developement</div></center>-->
+    </div>    
+    <div class = "gallery">
+        <a target = "_blank" href = "Young engineer award.jpg">
+            <img src = "eng.png" alt = "YEng" width="220" height = "140">
+        </a>
+        <div class = "desc">Young Engineer Award</div><!--<center>
+        <div class = "sub">-On spot scenario analysis</div></center>-->
+    </div>    
+    <div class = "gallery">
+        <a target = "_blank" href = "Trial Blazzers.jpg">
+            <img src = "idea.jpeg" alt = "Ideap" width="220" height = "140">
+        </a>
+        <div class = "desc">Trial Blazzer</div>
+           <!--<div class = "sub">-Startup Idea Presentation</div></center>-->
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "manager.jpeg">
+            <img src = "manager.jpeg" alt = "Ideap" width="220" height = "140">
+        </a>
+        <div class = "desc">Young Manager</div>
+           <!--<div class = "sub">-Startup Idea Presentation</div></center>-->
+    </div>
+</div>
+<h2 class = 'h2'>Under CSI Student Chapter: </h2>
+<input id = "IE" type = button value = "Click to view the poster" onclick = fun1()>
+<br><br>
+<div class = "CSI1">
+    <div class = "csi1">
+        <a target = "_blank" href = "C-Cracker.jpg">
+            <img src = "c.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">C Cracker</div>
+    </div>    
+    <div class = "csi1">
+        <a target = "_blank" href = "Java guru.jpg">
+            <img src = "java.png" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Java Guru</div>
+    </div>
+    <div class = "csi1">
+        <a target = "_blank" href = "Appify.jpg">
+            <img src = "app.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Appify</div>
+    </div>    
+    <div class = "csi1">
+        <a target = "_blank" href = "Run time py error.jpg">
+            <img src = "python.png" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Runtime Py-Error</div>
+    </div>
+    <div class = "csi1">
+        <a target = "_blank" href = "AI-war.jpg">
+            <img src = "AI.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">AI War-Data Dustup</div>
+    </div>
+</div>
+<div class = "CSI2">
+    <div class = "csi2">
+        <a target = "_blank" href = "Cyber siege.jpg">
+            <img src = "cyber.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Cyber Siege</div>
+    </div>
+    <div class = "csi2">
+        <a target = "_blank" href = "Web Hunter.jpg">
+            <img src = "web.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Web Hunter</div>
+    </div>    
+    <div class = "csi2">
+        <a target = "_blank" href = "Speed math magic.jpg">
+            <img src = "math.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Speed Math Magic</div>
+    </div>
+    <div class = "csi2">
+        <a target = "_blank" href = "Crack Interview.jpg">
+            <img src = "crack.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Crack Interview</div>
+    </div>    
+    <div class = "csi2">
+        <a target = "_blank" href = "Master-of-eng.jpg">
+            <img src = "eng.jpeg" alt = "Cpro" width="220" height = "140">
+        </a>
+        <div class = "desc">Master of English</div>
+    </div>
+</div> 
+</body>
+</html>
+<style>
+    @media screen and (max-width: 900px){  
+   
+       .CSI1, .CSI2, .IEEE{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .csi1, .csi2, .gallery{
+        display: contents;
+    }
+         }
+    body{
+        font-family: Playfair Display;
+        border-radius: 10px;
+        background-image: url("back.png");
+        background-size: cover;
+        text-align: center;
+    }
+    .heading{
+        font-size: 100px;
+        color: black;
+    }
+    
+    .main{
+         border-collapse: collapse;
+    }
+    #C{
+        border-radius: 10px;
+        width: 200px;
+        background-color: purple;
+        color: white;
+        height: 90px;
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #C:hover{
+            background-color: #1a1463;
+            color: white; 
+        }
+    #I{
+        border-radius: 10px;
+        width: 200px;
+        background-color: #1a1463;
+        color: white;
+        height: 90px;
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #I:hover{
+            background-color: purple;
+            color: white; 
+        }
+    #C:active, #I:active, #CS:active, #IE:active{
+            transform: scale(0.98);
+            box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+    #IE, #CS{
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+        background-color: black;
+        color: white;
+    }
+    #CS:hover, #IE:hover {
+        background-color: white;
+            color: black; 
+    }
+    div.IEEE{
+        margin-bottom: 100px;
+    }
+    div.gallery, div.csi1, div.csi2, div.csi3{
+        margin-right: 10px;
+        margin: 5px;
+        border: 3px solid black;
+    }
+    div.gallery, div.csi1, div.csi2, div.csi3, img{
+        border-radius: 20px;
+        
+    }
+    div.IEEE, div.CSI1, div.CSI2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    div.desc{
+        padding: 15px;
+        text-align: center;
+        font-weight: 900;
+    }
+    div.gallery:hover, div.gallery1:hover, div.csi1:hover, div.csi2:hover, div.csi3:hover{
+        border: 5px solid black;
+    }
+    h1{
+        font-size: 70px;
+    }
+    .sub{
+        font-size: 15px;
+        font-weight: 800;
+
+    }
+</style>
+<script>
+    function fun1()
+    {
+        location.href = "IEEEposter.html";
+    }
+    function fun2()
+    {
+        location.href = "CSSposter.html";
+    }
+</script>

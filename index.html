@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content= "Jeevani Anumandla">
+    <title>Home Page</title>
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+</head>
+
+<body>
+    <table width = 100% cellspacing = "0">
+        <tr>
+            <td class = "left"><img src = "img4.jpg"></td>
+            <td class = "left"><img src = "img5.jpg"></td>
+            <td rowspan = 2 style = "vertical-align: center" class = "right">
+                <h1>Future Sastra 2K23</h1>
+                <h2>-The Technical Symposium to showcase your talents</h2>
+                <br>
+                <input type = "button" value = "Click here to view the poster" id = "poster1" onclick = fun()>
+                <br>
+                <br>
+                <input type = "button" value = "Click here to view the contests" id = "poster" onclick = fun1()>
+                <br>
+                <br>
+                <input type = "button" value = "Aahlad 2K23" id = "ahladh" onclick = fun2()>
+            </td>
+        </tr>
+        <tr>
+            <td class = "left" width=350px><img src = "img1.jpg"></td>
+            <td class = "left"><img src = "img6.jpg"></td>
+            
+        </tr>
+    </table>
+</body>
+</html>
+<style>
+    body{
+        background-image: url("back.png");
+        background-size: cover;
+    }
+    h1, h2{
+        font-family: Playfair Display;
+        color: black;
+        }
+    h1{
+        font-size: 70px;
+        margin-bottom: 0px;
+    }
+    h2{
+        font-size: 30px;
+    }
+   img{
+        width: 350px;
+        height: 350px;
+        display: block;
+        border-radius : 10px;
+        border: 2px solid black;
+        
+    }
+    table, td, tr{
+        border-spacing: 0px;
+        padding: 2px;
+    }
+    #poster, #ahladh, #poster1{
+        border-radius: 10px;
+        width: 300px;
+        background-color: black;
+        height: 50px;
+        color: white;
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #poster:hover, #ahladh:hover, #poster1:hover{
+            background-color: antiquewhite;
+            color: black; 
+        }
+        #poster:active, #poster1:active, #ahladh:active{
+            transform: scale(0.98);
+            box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+    #para{
+        font-size: 15px;
+    }
+     @media only screen and (max-width: 1000px){ 
+        table td:nth-child(2), table td:nth-child(1){
+            display: none;
+        }
+        input[type=button]
+        {
+            width: 400px;
+        }
+        body{
+            text-align: center;
+        }
+         #poster, #poster1, #ahladh{
+             width: 390px;
+             height: 80px;
+             font-size: 25px;
+         }
+         h1{
+             padding: 40px;
+             font-size: 83px;
+         }
+         h2{
+             font-size: 30px;
+         }
+    }
+</style>
+<script>
+    function fun()
+    {
+        location.href = "onlyposter.html";
+    }
+    function fun1()
+    {
+        location.href = "Events.html";
+    }
+    function fun2()
+    {
+        location.href = "Ahladh.html";
+    }
+</script>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>Aahladh 2K23</h1>
+    <a target = "_blank" href = "Aahlad.jpg">
+        <input id = "IE" type = button value = "Click to view the poster" style="font-size: 20px">
+    </a>
+    <br><br>
+<div class = "Aahladh1">
+    <div class = "gallery">
+        <a target = "_blank" href = "solo-singing.jpeg">
+            <img src = "solo-singing.jpeg" alt = "Ipd" width="220" height = "160">
+        </a>
+        <div class = "desc">Solo Singing</div>
+    </div>    
+    <div class = "gallery">
+        <a target = "_blank" href = "solo-dance.jpeg">
+            <img src = "solo-dance.jpeg" alt = "YEng" width="220" height = "160">
+        </a>
+        <div class = "desc">Solo Dance</div>
+    </div>    
+    <div class = "gallery">
+        <a target = "_blank" href = "fashion-show.jpeg">
+            <img src = "fashion-show.jpeg" alt = "Ideap" width="220" height = "160">
+        </a>
+        <div class = "desc">Fashion Show</div>
+    </div>
+</div>
+
+<div class = "Aahladh2">
+    <div class = "gallery">
+        <a target = "_blank" href = "mehandhi.jpeg">
+            <img src = "mehandhi.jpeg" alt = "Ideap" width="220" height = "160">
+        </a>
+        <div class = "desc">Mehandhi</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "movie.jpeg">
+            <img src = "movie.jpeg" alt = "Ideap" width="220" height = "160">
+        </a>
+        <div class = "desc">Movie Quiz</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "xtalent.jpeg">
+            <img src = "xtalent.jpeg" alt = "Ideap" width="220" height = "160">
+        </a>
+        <div class = "desc">X-Talent</div>
+    </div>
+</div>
+</body>
+</html>
+<style>
+    body{
+        font-family: Playfair Display;
+        border-radius: 10px;
+        background-image: url("back.png");
+        background-size: cover;
+        text-align: center;
+    }
+    h1{
+        font-size: 70px;
+    }
+    div.Aahladh2{
+        clear: left;
+    }
+    div.gallery{
+        float: left;
+        margin-right: 10px;
+        margin: 5px;
+        border: 3px solid black;
+    }
+    div.gallery:hover{
+        border: 5px solid black;
+    }
+    div.desc{
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    #IE{
+        border-radius: 10px;
+        width: 230px;
+        background-color: #1a1463;
+        color: white;
+        height: 60px;
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #IE:hover{
+            background-color: black;
+            color: white; 
+        }
+    #IE:active{
+            transform: scale(0.98);
+            box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+    div.Aahladh1, div.Aahladh2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    div.gallery, img{
+        border-radius: 20px;
+    }
+    img{
+        border: 3px solid black;
+    }
+    .gallery{
+        display: contents;
+    }
+    div.desc{
+        padding: 0px 10px 20px 0px;
+        font-size: 25px;
+    }
+    
+</style>
