@@ -124,39 +124,7 @@
         font-size: 100px;
         color: black;
     }
-    
-    .main{
-         border-collapse: collapse;
-    }
-    #C{
-        border-radius: 10px;
-        width: 200px;
-        background-color: purple;
-        color: white;
-        height: 90px;
-        font-family: Playfair Display;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    #C:hover{
-            background-color: #1a1463;
-            color: white; 
-        }
-    #I{
-        border-radius: 10px;
-        width: 200px;
-        background-color: #1a1463;
-        color: white;
-        height: 90px;
-        font-family: Playfair Display;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    #I:hover{
-            background-color: purple;
-            color: white; 
-        }
-    #C:active, #I:active, #CS:active, #IE:active{
+   #CS:active, #IE:active{
             transform: scale(0.98);
             box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
         }
@@ -193,30 +161,32 @@
         text-align: center;
         font-weight: 900;
     }
-    div.gallery:hover, div.gallery1:hover, div.csi1:hover, div.csi2:hover, div.csi3:hover{
+    div.gallery:hover, div.csi1:hover, div.csi2:hover, div.csi3:hover{
         border: 5px solid black;
     }
     h1{
         font-size: 70px;
     }
-    .sub{
-        font-size: 15px;
-        font-weight: 800;
-
-    }
-     @media screen and (max-width: 900px){ 
-       .CSI1, .CSI2, .IEEE{
+     @media screen and (max-width: 900px)
+     { 
+       .CSI1, .CSI2, .IEEE
+         {
         display: flex;
         justify-content: center;
         text-align: center;
         flex-direction: column;
-    }
+            }
     .csi1, .csi2, .gallery{
         display: contents;
     }
          img{
              border: 3px solid black;
          }
+         #CS:hover, #IE:hover {
+        background-color: black;
+            color: white; 
+    }
+    }
 </style>
 <script>
     function fun1()
