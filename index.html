@@ -76,6 +76,15 @@
             background-color: antiquewhite;
             color: black; 
         }
+    #poster:hover:after, #ahladh:hover:after, #poster1:hover:after{
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
         #poster:active, #poster1:active, #ahladh:active{
             transform: scale(0.98);
             box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
