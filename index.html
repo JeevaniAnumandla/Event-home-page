@@ -11,24 +11,29 @@
 <body>
     <table width = 100% cellspacing = "0">
         <tr>
-            <td class = "left"><img src = "docs/assets/images/img4.jpg"></td>
-            <td class = "left"><img src = "docs/assets/images/img5.jpg"></td>
+            <td class = "left"><img src = "images/img4.jpg"></td>
+            <td class = "left"><img src = "images/img5.jpg"></td>
             <td rowspan = 2 style = "vertical-align: center" class = "right">
                 <h1>Future Sastra 2K23</h1>
                 <h2>-The Technical Symposium to showcase your talents</h2>
+                <h2>(20<sup>th</sup> April 2K22)</h2>
                 <br>
                 <input type = "button" value = "Click here to view the poster" id = "poster1" onclick = fun()>
+                <br>
+                <br>
+                <input type = "button" value = "Click here to view the schedule" id = "poster1" onclick = fun3()>
                 <br>
                 <br>
                 <input type = "button" value = "Click here to view the contests" id = "poster" onclick = fun1()>
                 <br>
                 <br>
                 <input type = "button" value = "Aahlad 2K23" id = "ahladh" onclick = fun2()>
+                
             </td>
         </tr>
         <tr>
-            <td class = "left" width=350px><img src = "docs/assets/images/img1.jpg"></td>
-            <td class = "left"><img src = "docs/assets/images/img6.jpg"></td>
+            <td class = "left" width=350px><img src = "images/img1.jpg"></td>
+            <td class = "left"><img src = "images/img6.jpg"></td>
             
         </tr>
     </table>
@@ -36,16 +41,22 @@
 </html>
 <style>
     body{
-        background-image: url("docs/assets/images/back.png");
+        background-image: url("images/back.png");
         background-size: cover;
     }
     h1, h2{
         font-family: Playfair Display;
         color: black;
+        background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         }
     h1{
         font-size: 70px;
         margin-bottom: 0px;
+        background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     h2{
         font-size: 30px;
@@ -76,7 +87,16 @@
             background-color: antiquewhite;
             color: black; 
         }
-
+    #poster:hover:after, #ahladh:hover:after, #poster1:hover:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
         #poster:active, #poster1:active, #ahladh:active{
             transform: scale(0.98);
             box-shadow:3px 2px 22px 1px rgba(0, 0, 0, 0.24);
@@ -102,10 +122,8 @@
          }
          h1{
              padding: 0px;
-             font-size: 76.4px;
-             background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
-             -webkit-background-clip: text;
-             -webkit-text-fill-color: transparent;
+             font-size: 100px;
+             
          }
          h2{
              font-size: 30px;
@@ -128,5 +146,9 @@
     function fun2()
     {
         location.href = "Ahladh.html";
+    }
+    function fun3()
+    {
+        location.href = "schedule.html"
     }
 </script>
