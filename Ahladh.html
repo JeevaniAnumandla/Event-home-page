@@ -9,49 +9,73 @@
 
 <body>
     <h1>Aahladh 2K23</h1>
-    <a target = "_blank" href = "docs/assets/images/Aahlad.jpg">
+    <a target = "_blank" href = "images/Aahlad.jpg">
         <input id = "IE" type = button value = "Click to view the poster" style="font-size: 20px">
     </a>
-    <br><br>
+    <br><br><br><br>
 <div class = "Aahladh1">
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/solo-singing.jpeg">
-            <img src = "docs/assets/images/solo-singing.jpeg" alt = "Ipd" width="220" height = "160">
+        <a target = "_blank" href = "images/solosinging.jpg">
+            <img src = "images/solo-singing.jpeg" alt = "Solo singing poster" width="220" height = "160">
         </a>
         <div class = "desc">Solo Singing</div>
     </div>    
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/solo-dance.jpeg">
-            <img src = "docs/assets/images/solo-dance.jpeg" alt = "YEng" width="220" height = "160">
+        <a target = "_blank" href = "images/solodance-poster.jpg">
+            <img src = "images/solo-dance.jpeg" alt = "Solo dance poster" width="220" height = "160">
         </a>
         <div class = "desc">Solo Dance</div>
     </div>    
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/fashion-show.jpeg">
-            <img src = "docs/assets/images/fashion-show.jpeg" alt = "Ideap" width="220" height = "160">
+        <a target = "_blank" href = "images/Fashion.jpg">
+            <img src = "images/fashion-show.jpeg" alt = "Fashion show poster" width="220" height = "160">
         </a>
         <div class = "desc">Fashion Show</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "images/foodfest.jpg">
+            <img src = "images/food-stall.jpg" alt = "food fest poster" width="220" height = "160">
+        </a>
+        <div class = "desc">Food fest</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "images/Guest-event-poster.jpg">
+            <img src = "images/guest-event.jpeg" alt = "Guest event poster" width="220" height = "160">
+        </a>
+        <div class = "desc">Guest event</div>
     </div>
 </div>
 
 <div class = "Aahladh2">
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/mehandhi.jpeg">
-            <img src = "docs/assets/images/mehandhi.jpeg" alt = "Ideap" width="220" height = "160">
+        <a target = "_blank" href = "images/MEHENDI-POSTER%202K23.jpg">
+            <img src = "images/mehandhi.jpeg" alt = "mehandhi poster" width="220" height = "160">
         </a>
         <div class = "desc">Mehandhi</div>
     </div>
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/movie.jpeg">
-            <img src = "docs/assets/images/movie.jpeg" alt = "Ideap" width="220" height = "160">
+        <a target = "_blank" href = "images/MovieQuiz.jpg">
+            <img src = "images/movie.jpeg" alt = "Movie quiz poster" width="220" height = "160">
         </a>
         <div class = "desc">Movie Quiz</div>
     </div>
     <div class = "gallery">
-        <a target = "_blank" href = "docs/assets/images/xtalent.jpeg">
-            <img src = "docs/assets/images/xtalent.jpeg" alt = "Ideap" width="220" height = "160">
+        <a target = "_blank" href = "images/X-TALENT.jpg">
+            <img src = "images/xtalent.jpeg" alt = "X talent poster" width="220" height = "160">
         </a>
         <div class = "desc">X-Talent</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "images/musical-event-poster.jpg">
+            <img src = "images/musical-event.jpeg" alt = "X talent poster" width="220" height = "160">
+        </a>
+        <div class = "desc">Musical show</div>
+    </div>
+    <div class = "gallery">
+        <a target = "_blank" href = "images/gaming%20and%20food.jpg">
+            <img src = "images/gaming.png" alt = "Gaming and food stalls" width="220" height = "160">
+        </a>
+        <div class = "desc">Special stalls</div>
     </div>
 </div>
 </body>
@@ -60,12 +84,16 @@
     body{
         font-family: Playfair Display;
         border-radius: 10px;
-        background-image: url("docs/assets/images/back.png");
+        background-image: url("images/bk.jpeg");
         background-size: cover;
         text-align: center;
     }
     h1{
         font-size: 70px;
+        background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
     }
     div.Aahladh2{
         clear: left;
@@ -89,7 +117,7 @@
         width: 230px;
         background-color: #1a1463;
         color: white;
-        height: 60px;
+        height: 50px;
         font-family: Playfair Display;
         font-size: 18px;
         font-weight: 500;
@@ -106,7 +134,6 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-direction: column;
     }
     div.gallery, img{
         border-radius: 20px;
@@ -120,13 +147,18 @@
     .gallery{
         display: contents;
     }
-         #IE:hover{
-            background-color: #1a1463;
-            color: white; 
+        body{
+            background-image: url("images/back.png");
         }
     div.desc{
         padding: 0px 10px 20px 0px;
         font-size: 25px;
-    }}
+    }
+        #IE:hover{
+            background-color: #1a1463;
+            color: white; 
+        }
+    
+ }
     
 </style>
